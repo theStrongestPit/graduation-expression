@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>畅抒社区</title>
+
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!--viewport为了确保适当的绘制和触屏缩放。user-scalable=no禁用缩放功能后，
+    用户只能滚动屏幕，就能让你的网站看上去更像原生应用的感觉。-->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/plugins/animate.min.css">
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+</head>
+<body>
+<!--导航栏-->
+<nav class="navbar navbar-default fox-top row">
+    <!--导航条 默认导航条  固定在顶部-->
+    <div class="container-fluid">
+<!--    <div class="container">-->
+        <!--Logo-->
+        <div class="navbar-header ">
+            <a href="index.html" class="navbar-brand">畅抒</a>
+        </div>
+        <!--小屏幕导航-->
+        <!--导航-->
+        <div class="navbar-collapse collapse ">
+            <ul class="nav navbar-nav navbar-left">
+                <!--navbar-left 向左对齐导航栏中的组件。-->
+                    <li><a href="">           </a></li>
+                <li><a href="#selected">推荐</a></li>
+                <li><a href="#tv">关注</a></li>
+                <li><a href="#movie">热门</a></li>
+                <li><a href="#variety">论坛</a></li>
+                <li><a href="#comic">博客</a></li>
+                <li><a href="#app">专栏</a></li>
+                <li><a href="#about">关于我们</a></li>
+<!--                <li>-->
+<!--                    <form class="  " role="search">-->
+<!--                        <div class="form-group">-->
+<!--                            <input type="text" class="form-control" placeholder="博客、作者或者内容" >-->
+<!--                        </div>-->
+<!--                        <button type="submit" class="btn btn-info">-->
+<!--                            搜索-->
+<!--                        </button>-->
+<!--                    </form>-->
+<!--                </li>-->
+            </ul>
+            <!--导航-->
+            <!-- 搜索栏 -->
+            <form class=" navb ar-nav navbar-right " role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="博客、作者或者内容" >
+                </div>
+                <button type="submit" class="btn btn-info">
+                        搜索
+                </button>
+            </form>
+                <!-- 搜索栏 -->
+
+                <!--个人中心-->
+
+                <!--个人中心-->
+
+                <!--登录注册-->
+            <div class=" navbar-right">
+                <button type="button" class="btn btn-primary btn-lg">
+                    <span class="glyphicon ">登录</span>
+                </button>
+            </div>
+                <!--登录注册-->
+        </div>
+    </div>
+</nav>
+<!--导航栏-->
+
+<!--宣传轮播图-->
+    <div class="row" style="width:100%;">
+        <div id="myCarousel" class="carousel slide center" >
+            <!--  轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner " style="height: 100%;">
+                <div class="item active picture">
+                    <img src="../../static/img/data visualization.gif" width="100%"  th:src="@{/img/data visualization.gif}" alt="First slide">
+                        <div class="carousel-caption">
+                            <h1>Chrome</h1>
+                            <p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器。</p>
+                            <p><a class="btn btn-lg btn-primary" href="http://www.google.cn/intl/zh-CN/chrome/browser/"
+                                  role="button" target="_blank">点我下载</a></p>
+                        </div>
+                </div>
+                <div class="item picture">
+                    <a href="https://xiaoyuan.cycnet.com.cn/s?uid=716239&app_version=1.1.7&sid=402707&time=1560531357&signature=e6y30XlmbkL9oxwAjJd1PPgrEiKWzN1gMQE2nZKW8RNpvPrqzB&sign=084945c349ec045d18726ef0704680fe#" target="_blank">
+                        <img src="../../static/img/202021401.jpg" width="100%" th:src="@{/img/202021401.jpg}" alt="Second slide" >
+                    </a>
+                </div>
+                <div class="item picture">
+                    <a href="http://gk.wh.cn/xxgkweb/blue/showView.jsp?unit=485124932&newid=1783106" target="_blank">
+                        <img src="../../static/img/202021402.jpg" width="100%" th:src="@{/img/202021402.jpg}" alt="Second slide" >
+                    </a>
+                </div>
+                <div class="item picture">
+                    <a href="https://mp.weixin.qq.com/s?__biz=MzAwNDE3NTM2NA==&mid=2650402454&idx=1&sn=24f49bed9e11eb508cc51fce16001a5b&chksm=8322adfdb45524ebec8b888056849ca93888754143601fba43872ca5e9b6eff38fa01a4ccfd8&mpshare=1&scene=23&srcid=#rd" target="_blank">
+                        <img src="../../static/img/202021403.jpg" width="100%" th:src="@{/img/202021403.jpg}" alt="Second slide" >
+                    </a>
+                </div>
+                <div class="item picture">
+                    <a href="http://tuanwei.ahpu.edu.cn/2019/0517/c538a118860/page.htm" target="_blank">
+                        <img src="../../static/img/202021404.jpg" width="100%" th:src="@{/img/202021404.jpg}" alt="Second slide" >
+                    </a>
+                </div>
+                <div class="item picture">
+                    <a href="http://tuanwei.ahpu.edu.cn/2019/0517/c538a118860/page.htm" target="_blank">
+                        <img src="../../static/img/202021404.jpg" width="100%" th:src="@{/img/202021404.jpg}" alt="Second slide" >
+                    </a>
+                </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="carousel-left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!--宣传轮播图-->
+
+<!--全局JS-->
+    <script src="../../static/js/bootstrap.min.js"></script>
+    <script src="../../static/js/jquery.min.js"></script>
+</body>
+</html>

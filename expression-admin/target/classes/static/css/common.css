@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors Wu Yang
+ * @date    2020-03-26 16:29:38
+ * @version $Id$
+ */
+body{
+    font-family: "Microsoft YaHei",sans-serif;
+}
+
+/*--index页面 --*/
+/*居中*/
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #97beff;
+    padding: 1px;
+}
+.t-warp{
+    margin:0 auto;
+    width:1000px;
+}
+
+.navbar-form{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.carousel-inner img{
+    height: 100%;
+    width: 100%;
+    padding: 5px 0;
+}
+.carousel-caption{
+    font-size: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 8px;
+}
+.carousel-indicators{
+    margin-bottom: 30px;
+}
+
+.detail{
+    background: #40d2b1;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;/*设置圆角边框*/
+    text-align: center;
+    line-height: 3;
+    margin-right: 15px;
+}
+.navbar-default{
+    top: 0;
+    box-shadow: 0px 2px 8px 0px rgba(50,50,50,0.25);
+    /*向框增加阴影box-shadow: h-shadow必需。水平阴影的位置 v-shadow必需。垂直阴影的位置。
+      blur后面均可选。模糊距离。 spread 阴影的尺寸  color 阴影的颜色*/
+    background-color: #161fff;
+}
+.fox-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.navbar-header .navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+    color: #d21029;
+    height: 70px;
+    line-height: 35px;
+}
+.navbar-default .navbar-nav > li > a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+    height: 70px;
+    line-height: 35px;
+}
+.navbar-default .navbar-toggle .icon-bar{
+    background-color:rgba(110, 231, 203, 1);
+}
+.navbar-default .navbar-toggle:hover{
+    border-color:#40d2b1;
+    background-color:rgba(91, 185, 153, 1);
+}
+.navbar-toggle{
+    margin-top:17px;
+}
+
+.logo-to{
+    left: 100px;
+}
+
+/*轮播图*/
+/*Bootstrap    轮播图左右按钮去阴影*/
+.carousel-left {
+    background-image:none !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+.carousel-right {
+    left: auto;
+    right: 0;
+    background-image:none !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+.picture {
+    width: 100%;
+    height: 600px;
+    margin: 0px 5px 5px 6px;
+}
+.fl {
+
+    width: 60%;
+}
+.fr {
+    width: 20%;
+    float: right;
+}
+
